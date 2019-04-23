@@ -1,0 +1,24 @@
+body {
+  
+}
+
+.container-fluid {
+    border-style: solid; 
+    border-color: blue;
+}
+
+.jumbotron {
+    background-color: #568200;
+    color: white;
+    text-align: center;
+}
+
+button {
+    background-color: #EE8110;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    cursor: crosshair;
+}
+
