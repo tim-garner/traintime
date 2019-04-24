@@ -22,7 +22,14 @@
      </header>
 
 <body>
-        <div class="container-fluid">
+
+  
+
+        <marquee behavior="scroll" direction="left">
+            <img src="assets/images/choo.gif" width="120" height="80" alt="Natural" />
+          </marquee>
+
+        <div class="container">
     <h1>Current Train</h1>
         <form>
           
@@ -55,23 +62,22 @@
             <br>
             <div class="container-fluid">
             <h2>Add Train</h2>
-            <br>
-            <br>
+            
             <form>
               Train name:<br>
-              <input type="text" Train Name="trainname">
+              <input type="text" Train Name="trainname" size="100">
               <br>
               Destination:<br>
-              <input type="text" name="destination">
+              <input type="text" name="destination" size="100">
             
               <br>
               Frequency:<br>
-              <input type="text" name="frequency">
+              <input type="text" name="frequency" size="100">
               <br>
                  
              
               First Train Time:<br>
-              <input type="text" name="firsttraintime">
+              <input type="text" name="firsttraintime" size="100">
              
             </form>
             
@@ -80,13 +86,20 @@
 
                               </div>
 
-                              <button type="submit" form="trainform" style= "cursor:crosshair" value="Submit">Submit</button>
+                              <button type="submit" form="trainform" style= "cursor:crosshair" value="submit">Submit</button>
+                            
+                              
 
-               
+
+                              <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+
+                            <!-- !!creating jquery -->
                               <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
                               <script src="assets/javascript/tt.js"></script>  
 
 
-    
-</body>
+
+
+                            </body>
+ 
 </html>

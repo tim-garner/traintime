@@ -20,5 +20,10 @@ button {
     font-size: 16px;
     font-style: italic;
     cursor: crosshair;
+
 }
 
+marquee {
+    background-image: url("../images/choo.gif");
+  
+}
