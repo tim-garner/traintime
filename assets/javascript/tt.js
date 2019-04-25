@@ -47,3 +47,24 @@ $("#submit").on("click", function(event){
     console.log(trainname,destination,nextarrival,frequency,minutesaway)
 
 });
+
+database.ref().on("child_added", function(snapshot){
+  var temp = snapshot.val();
+  console.log(temp, temp.name);
+  var destination = $("<p>").text(temp.destination);
+  var frequency = $("<p>").text(temp.frequency);
+  var minutesaway = $("<p>").text(temp.minutesaway);
+  var trainname = $("<p>").text(temp.trainname);
+  var nextarrival = $("<p>").text(temp.nextarrival);
+  
+  $("#dump-div1").append(destination);
+  $("#dump-div2").append(frequency);
+  $("#dump-div3").append(minutesaway);
+  $("#dump-div4").append(trainname);
+  $("#dump-div5").append(nextarrival);
+
+}), function(errorObject){
+
+}
+
+
