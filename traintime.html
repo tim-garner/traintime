@@ -34,93 +34,37 @@
 
         <div class="container">
     <h1>Current Train</h1>
-        <!-- <form> -->
-          
-<!-- possible way to complete project--!          
-                <div class="form-row">
+    <div class="form-row">
          
-                    <div class="col">
-                        <input type="text" class="form-control" id="trainname" placeholder="Train Name">
-                        <div id="dump-div1"></div>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" id="destination" placeholder="Destination">
-                        <div id="dump-div2"></div>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" id="frequency" placeholder="Frequency">
-                        <div id="dump-div3"></div>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" id="nextarrival" placeholder="Next Arrival">
-                        <div id="dump-div4"></div>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" id="minutesaway" placeholder="Minutes Away">
-                        <div id="dump-div5"></div>
+        <div class="col">
+            <input type="text" class="form-control" id="trainname" placeholder="Train Name">
+            <div id="text">Silver Bullet</div>
+            <div id="dump-div1"></div>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="destination" placeholder="Destination">
+            <div id="text">Tarkers Mill</div>
+            <div id="dump-div2"></div>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="distance" placeholder="distance">
+            <div id="text">750</div>
+            <div id="dump-div3"></div>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="firsttraintime" placeholder="Next Arrival">
+            <div id="text">2200</div>
+            <div id="dump-div4"></div>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="minutesaway" placeholder="Minutes Away">
+            <div id="text">60</div>
+            <div id="dump-div5"></div>
+            </div>
 
-                </div> -->
-                <div class="form-row">
-                <div class="table-responsive">          
-                    <table class="table">
-                      <thead>
-                        <tr>
-                     
-                          <th>Train Name</th>
-                          <th>Destination</th>
-                          <th>Frequency(minutes)</th>
-                          <th>Next Arrival</th>
-                          <th>Minutes Away</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                  
-                            <td>Crazy Train</td>
-                            <td>Rock and Roll Hame of Fame</td>
-                            <td>1000</td>
-                            <td>0800</td>
-                            <td>30</td>
-                          </tr>
+
+
                     
-                          <td>Silver Bullet</td>
-                          <td>Tarkers Mill</td>
-                          <td>750</td>
-                          <td>2200</td>
-                          <td>60</td>
-                    </tr>
-            
-                    <td>Polar Express</td>
-                    <td>The North Pole</td>
-                    <td>850</td>
-                    <td>1700</td>
-                    <td>120</td>
-                    </tr>
-             
-                    <td>Murder on the Orient Express</td>
-                    <td>Istanbul</td>
-                    <td>1500</td>
-                    <td>1600</td>
-                    <td>720</td>
-                    </tr>
-            
-                    <td>Trans-Siberian Express</td>
-                    <td>Moscow</td>
-                    <td>200</td>
-                    <td>0300</td>
-                    <td>2330</td>
-         
-                    <td><div id="dump-div1"></div></td>
-                    <td><div id="dump-div2"></div></td>
-                    <td><div id="dump-div3"></div></td>
-                    <td><div id="dump-div4"></div></td>
-                    <td><div id="dump-div5"></div></td>
-                        </tbody>
-                      </table>
-
-
-                    </body>
-
-
             <br>
             <br>
             <div class="container-fluid">
@@ -128,19 +72,21 @@
             
             <form>
               Train name:<br>
-              <input type="text" Train Name="trainname" size="100">
+              <input type="text" name="trainname" size="100" input id="train-input">
               <br>
               Destination:<br>
-              <input type="text" name="destination" size="100">
-            
+              <input type="text" name="destination" size="100"input id="destination-input">
               <br>
-              Frequency:<br>
-              <input type="text" name="frequency" size="100">
-              <br>
-                 
-             
               First Train Time:<br>
-              <input type="text" name="firsttraintime" size="100">
+              <input type="text" name="firsttraintime" size="100"input id="ftt-input">
+              <br>
+              Minutes Away:<br>
+              <input type="text"name="minutesaway" size="100"input id="minutes-input">
+              <br>
+              Distance:<br>
+              <input type="text"name="distance" size="100" input id="distance-input">
+
+
              
             </form>
             
@@ -149,10 +95,11 @@
 
                               </div>
 
-                              <button type="submit" form="trainform" style= "cursor:crosshair" value="submit">Submit</button>
+                              <button  id = "submit" type="submit" form="trainform" style= "cursor:crosshair" value="submit">Submit</button>
                             
                               
 
+                            </body>
 
                               <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
 
