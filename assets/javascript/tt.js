@@ -36,6 +36,7 @@ var minutesaway = "";
 var distance = "";
 
 
+
 $("#submit").on("click", function(event){
     event.preventDefault();
     console.log("choo choo");
@@ -89,7 +90,7 @@ database.ref().on("value", function(snapshot) {
 });
 
 
-var todaysDate = "04/25/2019";
+var todaysDate = "04/27/2019";
 console.log(todaysDate);
 
 function startTime()
@@ -114,3 +115,11 @@ return i;
 }
 console.log(startTime);
 
+
+    var convertedTime = moment(minutesaway, firsttraintime);
+
+
+var a = moment(minutesaway);
+var b = moment(firstimetrain);
+a.diff(b) // 86400000
+console.log(moment); 
