@@ -1,14 +1,3 @@
-//praticing java
-let bobsDebt = 10000;
-bobsDebt = bobsDebt - 10000;
-console.log(bobsDebt);
-//3000
-
-//praticing javs X2 
-for (let number =0; number <=12; number = number +2){
-    console.log(number);
-}
-
 
 ///creating firebase for project
   // Initialize Firebase
